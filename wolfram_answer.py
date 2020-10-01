@@ -1,7 +1,8 @@
 import requests
 import json
 
-key = '42QAWX-5A7QT5V695'
+# Enter your own API key below
+key = ''
 question = str(input('Input the question you want Wolfram Alpha to answer > '))
 
 r = requests.get('https://api.wolframalpha.com/v2/query?input={}&appid={}&format=plaintext&output=json'.format(question.replace(' ', '+'), key))
